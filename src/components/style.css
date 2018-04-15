@@ -1,0 +1,90 @@
+.App {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.card {
+    margin: 200px 50px;
+}
+.card.BTC {
+    border: 3px solid #f7931a;
+}
+
+.card.LTC {
+    border: 3px solid #88cbf5;
+}
+.site {
+    margin-top: 10px;
+}
+.site a {
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.site.BTC a {
+    background-color: #f7931a;
+}
+.site.LTC a {
+    background-color: #88cbf5;
+}
+
+.site a:hover {
+    text-decoration: none;
+}
+
+.card .name {
+    padding: 16px 24px;
+    font-weight: bold;
+    width: 90%;
+    font-size: 20px;
+}
+
+.card .name.BTC {
+    color: #cc7511;
+} 
+.card .name.LTC {
+    color: #1d6491;
+} 
+
+.card .logo {
+    width: 30%;
+    line-height: 100px;
+}
+
+.card .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.card .price {
+    width: 70%;
+    font-size: 3.4em;
+    line-height: 100px;
+    text-align: center;
+}
+  
+.card .price.BTC {
+    color: #f7931a;
+}
+  
+.card .price.LTC {
+    color: #88cbf5;
+}
+.site {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+@media only screen and (max-width : 767px) {
+    .App {
+        display: block;
+    }
+    .card {
+        margin: 50px 0;
+    }
+}
